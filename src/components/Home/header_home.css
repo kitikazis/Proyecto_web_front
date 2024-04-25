@@ -1,21 +1,25 @@
+.padre_home {
+  display: flex;
+  height: 100px;
+  width: 100%;
+  justify-content: space-between;
+  padding-left: 0px;
+  padding-right: 100px;
+  top: 0;
+  left: 0;
+  right: 0;
+  position: fixed;
+  background-color: white;
+  margin-top: 100pz; /* Ajusta según sea necesario */
+  z-index: 1000;
+}            
 
-.padre_home{
-     display: flex;
-     height: 100px;
-          width: auto;
-          justify-content: space-between;
-        
-          padding-left: 0px;
-               padding-right: 30px;
-               
-}
 .head_home{
      display: flex;
           height: 100px;
           width:auto;
           justify-content: flex-start;
           align-items: center;
-         
           padding-left: 30px;
           padding-right: 30px;
           padding-top: 15px;
@@ -28,7 +32,7 @@
           min-height: 120px;
           min-width: 120px;
    
-     margin-right: 30px;
+     margin-right: 20px;
 }
 
 .busqueda{
