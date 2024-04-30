@@ -69,8 +69,11 @@ function Header_home(props) {
         {modalVisible && (
           <div className="modal">
             <div className="modal-content">
+              <nav>
+                <p>User:</p>
+                <p>niebles quiña luis angel</p>
+              </nav>
               
-              <p>Contenido del modal</p>
               <button onClick={toggleModal}>Salir</button>
             </div>
           </div>
