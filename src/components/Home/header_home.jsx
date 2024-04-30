@@ -1,10 +1,18 @@
 // MiComponente.js
+
+import { useState } from "react";
 import React from "react";
 import logo from "../../assets/img/logo.png";
 import logo2 from "../../assets/img/user.png";
 import logo3 from "../../assets/img/audi.png";
 import "./header_home.css";
 function Header_home(props) {
+  const [modalVisible, setModalVisible] = useState(false);
+
+  const toggleModal = () => {
+    setModalVisible(!modalVisible);
+  };
+
   return (
     <div className="padre_home">
       <div className="head_home">
@@ -51,10 +59,22 @@ function Header_home(props) {
         </div>
       </div>
       <div className="user_box flex items-center">
-        <p className=" mr-4 text-1xl">Luis Niebles - Estudiante</p>
-        <div className="user  rounded-full flex items-center justify-center ">
+        <p className=" user_p mr-4 text-1xl">Luis Niebles - Estudiante</p>
+        <div
+          className="user  rounded-full flex items-center justify-center "
+          onClick={toggleModal}
+        >
           <img src={logo2} className="  rounded-full"></img>
         </div>
+        {modalVisible && (
+          <div className="modal">
+            <div className="modal-content">
+              
+              <p>Contenido del modal</p>
+              <button onClick={toggleModal}>Salir</button>
+            </div>
+          </div>
+        )}
       </div>
     </div>
   );

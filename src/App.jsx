@@ -6,17 +6,18 @@ import Comentarios from "./components/posts/Comentarios";
 import CrearPublicacion from "./components/posts/Crear_Publicacion";
 //ss
 import User_publicacion from "./components/posts/user_publicacion";
-
+import Login from "./components/login/login";
 import "./App.css";
 
 function App() {
- 
   return (
     <>
       <Router>
         <div>
           <Routes>
-            <Route exact path="/" element={<Index />}></Route>
+            <Route exact path="/" element={<Login />}></Route>
+
+            <Route exact path="/home" element={<Index />}></Route>
 
             <Route exact path="/crear" element={<CrearPublicacion />}></Route>
 
