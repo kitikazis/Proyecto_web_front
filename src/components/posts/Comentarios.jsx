@@ -1,4 +1,4 @@
-import logo2 from "../../assets/img/perrrfil.jpg";
+import logo2 from "../../assets/img/perrrfil.png";
 import './Comentarios.css';
 import logo3 from "../../assets/img/gegege.jpg";
 
@@ -55,4 +55,5 @@ function Comentarios() {
   );
 }
 
-export default Comentarios;
+
+export default Comentarios;
