@@ -1,4 +1,5 @@
 import logo2 from "../../assets/img/perrrfil.png";
+import logo2 from "../../assets/img/user.png";
 import './Comentarios.css';
 import logo3 from "../../assets/img/gegege.jpg";
 
@@ -55,6 +56,7 @@ function Comentarios() {
             </div>
             <div className="responder">
             <a href="#" className="responder-link">Responder</a>
+              <button className="btn responder-btn">Responder</button>
             </div>
           </div>
         </body>

@@ -48,7 +48,6 @@ body {
     color: #000; /* Color del texto */
   }
   
-  
   /* Header Styles */
   header {
     padding: 20px;
@@ -67,10 +66,10 @@ body {
     margin-bottom: 20px;
   }
 
+
   .top-frame h2 {
     font-weight: bold; /* Aplica negrita al título "Comentarios:" */
   }
-  
   
   
   .profile-info {
@@ -164,4 +163,14 @@ body {
   .responder {
     margin-top: 20px;
     text-align: left;
+  }
+  
+  
+  .responder-btn {
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #4caf50; /* Green */
+    color: white;
   }
