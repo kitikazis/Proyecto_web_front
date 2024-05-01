@@ -5,13 +5,17 @@ import logo3 from "../../assets/img/gegege.jpg";
 function Comentarios() {
   return (
     <>
+    
       <div className="comentarios-container">
+      
         <header>
+        
           <div className="top-frame">
             <h2>Publicacion de p4cman jose</h2>
+            
             <span className="close-btn">&#10006;</span>
           </div>
-        <hr className="divider" />
+          <hr className="divider"/>
           <div className="header-container">
             <div className="profile-info">
               <div className="user-details">

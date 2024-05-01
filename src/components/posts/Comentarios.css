@@ -29,9 +29,10 @@ body {
     border: 0; /* Elimina el borde predeterminado */
     height: 4px; /* Establece la altura de la línea */
     background-color: #000000; /* Color de la línea */
-    margin: 10px auto; /* Espacio alrededor de la línea y centrado horizontalmente */
-    max-width: 900px;
+    width: 100%; /* Establece el ancho al 100% */
+    margin-top: 20px; /* Ajusta el margen superior según sea necesario */
   }
+  
 
   .comentarios-container {
     max-width: 750px;
