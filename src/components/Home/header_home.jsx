@@ -64,13 +64,16 @@ function Header_home(props) {
           className="user  rounded-full flex items-center justify-center "
           onClick={toggleModal}
         >
-          <img src={logo2} className="  rounded-full"></img>
+          <img src={logo2} className="rounded-full"></img>
         </div>
         {modalVisible && (
-          <div className="modal">
+          <div className="modal_login">
             <div className="modal-content">
+              <nav>
+                <p>User:</p>
+                <p>niebles quiña luis angel</p>
+              </nav>
               
-              <p>Contenido del modal</p>
               <button onClick={toggleModal}>Salir</button>
             </div>
           </div>

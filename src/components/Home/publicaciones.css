@@ -170,18 +170,173 @@ margin-left: 10px;
 }
 
 
-
-
-.modal-fondo-borrosa .modal-content {
-     background: rgba(255, 255, 255, 0.5); /* Ajusta el valor de opacidad (el último número) según lo desees */
-     backdrop-filter: blur(5px); /* Ajusta el valor de desenfoque según lo desees */
+.modal-container {
+     position: fixed;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     border-radius: 10px;
+     z-index: 9999;
+     background-color: #FFFFFF;
+     padding: 38px; /* Aumentar el padding para dar más espacio al contenido */
+     border: 3px solid #ccc;
+     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+     width: 65%; /* Ajustar el ancho al 80% del tamaño de la pantalla */
+     max-width: 580px;
+     height: auto; /* Permitir que la altura se ajuste automáticamente según el contenido */
+     max-height: 90vh; /* Establecer una altura máxima para evitar que sea demasiado grande en pantallas pequeñas */
+     overflow-y: auto; /* Agregar desplazamiento vertical si el contenido es demasiado grande */
+   }
+   
+   .form-group {
+     margin-bottom: 17px; /* Agregar margen inferior a los elementos del formulario */
    }
 
-   
-   .modal {
-     background-color: white; /* Ajusta el color de fondo del modal según sea necesario */
+   .modal-footer {
+     margin-top: 17px; /* Agregar margen superior al pie de página del modal */
+   }
+
+   .modal-content {
+     max-width: 600px;
+     margin: 0 auto;
    }
    
-   .fondo-opaco {
-     background-color: rgba(0, 0, 0, 0.5); /* Color de fondo transparente y opaco */
+
+   
+   .contenedor_horizontal {
+     display: flex;
+     justify-content: space-between; /* Alinear elementos horizontalmente */
+ }
+
+   
+   
+   .grupo_selector {
+     display: flex; /* Make the grupo_selector a flex container */
+     flex-direction: column; /* Arrange elements vertically one below the other */
+     border-radius: 10px;
+     gap: 10px;  /* Add space between each grupo_selector element */
+     margin-bottom: 10px; /* Add space after the last grupo_selector element (optional) */
+   }
+   
+   .titulo_categoria, .titulo_tema {
+     display: flex; /* Make the titulo_categoria and titulo_tema elements flex containers */
+     align-items: center; /* Align label text vertically centered within the selector */
+     margin-bottom: 5px;  /* Add space between the label and the select box */
+   }
+   
+   .titulo_categoria label, .titulo_tema label {
+     margin-right: 10px; /* Add space between the label and the select box */
+     flex: 1; /* Allow the labels to flex and occupy available space */
+   }
+   
+   .grupo_selector select {
+     width: 200px; /* Set a fixed width for the select boxes */
+     padding: 5px; /* Add padding to the select boxes */
+     border-radius: 10px;
+     border: 2px solid #ccc; /* Add a border to the select boxes */
+     border-radius: 5px; /* Round the corners of the select boxes */
+   }
+   
+   .titulo {
+     font-size: 20px;
+     font-weight: bold;
+     color: black;
+     margin-right: 10px;
+ }
+ 
+ .logo_virgo {
+     width: 80px; /* Ancho deseado para la imagen */
+     height: auto; /* Altura ajustada automáticamente según el ancho */
+ }
+ .mas_no_funca {
+     width: 30px; /* Ancho deseado para la imagen */
+     margin-right: -120px;
+ }
+
+
+
+ .contenedor_virgo {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+ }
+
+ .doble_margen {
+     border: 2px solid #ccc; /* Añade un borde a los elementos */
+     border-radius: 10px; /* Agrega bordes redondeados */
+     padding: 20px; /* Añade espacio dentro del borde */
+ }
+ 
+ 
+ 
+
+ .image-input {
+     position: relative;
+     display: inline-block;
+     /* Styling for the wrapper element */
+   }
+   
+   .image-input input[type="file"] {
+     opacity: 0;
+     position: absolute;
+     top: 0;
+     right: 0;
+     bottom: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     /* Hide the default input element */
+   }
+   
+   .image-input label {
+     width: 415%; /* Ancho del input al 100% del contenedor */
+     height: 100px;
+     padding: 20px;
+     box-sizing: border-box;
+     border-radius: 10px;
+     justify-content: center; 
+     align-items: center; 
+     vertical-align: middle;
+     text-align: center;
+     cursor: pointer;
+     background-color: #e0e0e0; 
+     color: #A2A2A2; 
+   }
+   
+   .image-input label:hover {
+     background-color: #cccccc; /* Optional: Change hover color */
+   }
+       
+   
+
+
+
+
+  
+    
+   .modal-footer {
+     display: flex;
+   }
+   
+   .btn_cancelar {
+     margin-right: 50px;
+     background-color: white !important;
+     color: black !important;
+     border-radius: 7px;
+     padding: 4px 20px;
+     border: 4px solid #A2A2A2; 
+   }
+   
+   .btn_crear {
+     background-color: white !important;
+     color: black !important;
+     border-radius: 7px;
+     padding: 4px 30px;
+     border: 4px solid #A2A2A2; 
+   }
+   
+
+   .separador_horizontal {
+     border: 1px solid black; /* Estilo del separador */
+     margin: -11px 0; /* Margen arriba y abajo para separar del contenido */
    }

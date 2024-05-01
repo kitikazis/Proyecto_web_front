@@ -10,7 +10,7 @@
   right: 0;
   position: fixed;
   background-color: white;
-  margin-top: 100pz; /* Ajusta según sea necesario */
+  margin-top: 100pz; 
   z-index: 1000;
 }            
 
@@ -82,19 +82,26 @@ height: 60px;
 
 
 }
-.modal{
-     height: 200px;
-     width: auto;
-     padding: 20px;
+.modal_login{
+     height: auto;
+     width: 200px;
+    
      position: absolute;
-     border: 2px solid red;
+     border: 2px solid rgb(75, 183, 255);
      background-color: aliceblue;border-radius: 5px;
      top: 85px;
      right:100px ;
 }
 .modal-content{
-     border: 2px solid rgb(0, 255, 204);
+     flex-direction: column;
+     display: flex;
+     width: auto;
+     height: 100%;
+    
 }
-.modal p{
 
-}
+.modal-content button{
+     margin-top: 10px;
+     background-color: rgb(32, 125, 255);
+     
+     }
