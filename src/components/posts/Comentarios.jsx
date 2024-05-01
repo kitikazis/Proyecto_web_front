@@ -11,6 +11,7 @@ function Comentarios() {
             <h2>Publicacion de p4cman jose</h2>
             <span className="close-btn">&#10006;</span>
           </div>
+        <hr className="divider" />
           <div className="header-container">
             <div className="profile-info">
               <div className="user-details">
@@ -26,7 +27,7 @@ function Comentarios() {
                 <button className="btn noticia">Noticia</button>
                 <button className="btn programacion">Programacion</button>
               </div>
-              <nav className="nac">16 / 04 / 2024</nav>
+              <nav className="nac">30 / 04 / 2024</nav>
             </div>
           </div>
         </header>
@@ -36,28 +37,15 @@ function Comentarios() {
             <img src={logo3} alt="Imagen de comentario" className="comentario-img" />
             
             <div className="comentario">
-              <div className="top-frame">
-                <h2>Comentarios:</h2>
+              
+              <div className="top-framee">
+                <h2>COMENTARIOS:</h2>
               </div>
-              <div className="comentario-details">
-                <div className="user-details">
-                  <img src={logo2} alt="Imagen de usuario" className="comentario-com" />
-                  <div className="user-name">
-                    <h1>Nombre de usuario</h1>
-                    <nav className="nav">
-                      <samp>correo@correo.com</samp>
-                    </nav>
-                  </div>
-                </div>
-                <nav className="nac">Fecha del comentario</nav>
-              </div>
-              <p>Me parece una publicación excelente y muy motivadora a impulsar y pensar de más, deberían seguir así y subir contenido convincente de algo bueno a practicar o cultural que demuestre importancia en esta humanidad.</p>
-            </div>
-            <div className="responder">
-            <a href="#" className="responder-link">Responder</a>
+              
             </div>
           </div>
         </body>
+        
       </div>
     </>
   );

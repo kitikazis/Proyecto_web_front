@@ -13,42 +13,70 @@ body {
     border-radius: 5px;
     padding: 15px;
     margin-top: 20px;
-    max-width: 600px; /* Ajusta el ancho máximo del cuadro de comentario según sea necesario */
+    max-width: 700px; /* Ajusta el ancho máximo del cuadro de comentario según sea necesario */
   }
   .comentario .top-frame h2 {
     text-align: left;
   }
   
-  /* Nuevo estilo para la imagen de perfil del comentario */
-.comentario .comentario-com {
-    width: 40px; /* Mismo ancho que la imagen de perfil de p4cman jose */
-    height: 40px; /* Mismo alto que la imagen de perfil de p4cman jose */
-    border-radius: 50%;
-    margin-right: 10px; /* Margen derecho para separar la imagen del nombre de usuario */
+  .comentario-details {
+    display: flex; /* Establece el contenedor como un flex container */
+    justify-content: space-between; /* Distribuye los elementos de manera uniforme, dejando espacio entre ellos */
+    align-items: center; /* Alinea verticalmente los elementos al centro */
   }
   
-  
+  .divider {
+    border: 0; /* Elimina el borde predeterminado */
+    height: 4px; /* Establece la altura de la línea */
+    background-color: #000000; /* Color de la línea */
+    margin: 10px auto; /* Espacio alrededor de la línea y centrado horizontalmente */
+    max-width: 900px;
+  }
 
   .comentarios-container {
-    max-width: 800px;
+    max-width: 750px;
     margin: 0 auto;
     padding: 20px;
     border: 1px solid #ddd;
     border-radius: 5px;
+    border-top-left-radius: 15px; /* Borde redondeado en la esquina superior izquierda */
+    border-top-right-radius: 15px;
+    border-top: 3px solid #000; /* Borde negro en la parte superior */
+    border-left: 3px solid #000; /* Borde negro en la parte izquierda */
+    border-right: 3px solid #000; /* Borde negro en la parte derecha */
+    border-bottom: 3px solid #000;
+    border-bottom-left-radius: 15px; /* Borde redondeado en la esquina inferior izquierda */
+    border-bottom-right-radius: 15px;
   }
+
+  .top-frame {
+    text-align: center;
+    background-color: #fffaeb;
+    padding: 20px;
+    margin-bottom: 0;
+    max-width: 700px;
+    /* Sin borde en la parte inferior */
+  }
+
+  .top-frame h2 {
+    font-size: 30px;
+    margin-top: 0;
+  }
+
   .close-btn {
     float: right;
     font-size: 24px;
     cursor: pointer;
-    margin-top: -25px;
+    margin-top: -40px;
+    width: 40px; /* Ajusta el tamaño del botón */
+    height: 40px; /* Ajusta el tamaño del botón */
+    border-radius: 50%; /* Hace que el botón tenga forma circular */
+    border: 2px solid black; /* Establece el color y el grosor del borde */
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   
-  .responder-link {
-    text-decoration: none; /* Elimina el subrayado predeterminado del enlace */
-    color: #000; /* Color del texto */
-  }
-  
-  /* Header Styles */
   header {
     padding: 20px;
     border-bottom: 1px solid #ddd;
@@ -59,16 +87,10 @@ body {
     align-items: center;
     justify-content: space-between;
   }
-  .top-frame {
-    text-align: center;
-    background-color: #f0f0f0;
-    padding: 20px;
-    margin-bottom: 20px;
-  }
 
-
-  .top-frame h2 {
-    font-weight: bold; /* Aplica negrita al título "Comentarios:" */
+  .top-framee h2 {
+     /* Aplica negrita al título "Comentarios:" */
+    font-size: 20px;
   }
   
   
@@ -110,16 +132,17 @@ body {
   }
   
   .nac {
-    color: #888;
-    margin-right: 20px;
+    color: #000;
+    margin-right: 50px;
   }
-  
+
   .action-buttons {
     display: flex;
-    margin-left: 20px;
+    margin-left: 10px;
   }
   
   .btn {
+    border-radius: 20px;
     padding: 10px 15px;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -128,20 +151,34 @@ body {
   }
   
   .noticia {
+    border-radius: 20px;
+    padding: 5px 10px; /* Ajusta el padding para reducir el ancho del botón */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
     background-color: #fff;
     color: #000;
   }
   
   .programacion {
+    border-radius: 20px;
+    padding: 5px 10px; /* Ajusta el padding para reducir el ancho del botón */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
     background-color: #fff;
     color: #000;
   }
+  
+
   .btn {
-    padding: 10px 15px;
-    border: 2px solid #000; /* Ancho y color del borde resaltado */
+    border-radius: 30px;
+    padding: 3px 30px;
+    border: 4px solid #000; /* Ancho y color del borde resaltado */
     border-radius: 5px;
     cursor: pointer;
     margin-right: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
   }
   
   
@@ -155,22 +192,6 @@ body {
   .comentario img {
     margin-top: 10px;
     width: 100%;
-    max-height: 200px;
+    max-height: 400px;
     object-fit: cover;
-  }
-  
-  /* Responder Styles */
-  .responder {
-    margin-top: 20px;
-    text-align: left;
-  }
-  
-  
-  .responder-btn {
-    padding: 10px 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    cursor: pointer;
-    background-color: #4caf50; /* Green */
-    color: white;
   }
