@@ -39,7 +39,7 @@ function Login() {
             <nav className="button">
               <button>
                 <img src={logo4}></img>
-                <p>Google</p>
+                <p>Google owo</p>
               </button>
               <button>
                 <img src={logo1}></img> <p>GitHub</p>
