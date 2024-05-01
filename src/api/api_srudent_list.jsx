@@ -6,7 +6,7 @@ const StudentsList = () => {
   useEffect(() => {
     const fetchStudents = async () => {
       try {
-        const response = await fetch("https://laravelpancho.fly.dev/api/students");
+        const response = await fetch("http://127.0.0.1:8000/api/students");
         const data = await response.json();
         setStudents(data.message);
        
