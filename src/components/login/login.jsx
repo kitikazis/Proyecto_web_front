@@ -47,7 +47,10 @@ function Login() {
             </nav>
           </div>
         </section>
-        <div className="part2"></div>
+        <div className="part2">
+
+        <img src={logo3} className="logosenati"></img>
+        </div>
       </div>
     </>
   );
